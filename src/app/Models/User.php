@@ -41,4 +41,16 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    //リレーションの定義(Attendanceモデルとの関連)
+    public function attendances()
+    {
+        return $this->hasMany(Attendance::class);
+    }
+
+    public function breakRecords()
+    {
+        return $this->hasManyThrough(BreakRecord::class,Attendance::class);
+    }
+
 }

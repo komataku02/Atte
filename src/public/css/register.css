@@ -1,0 +1,115 @@
+/*ヘッダー--*/
+
+.header {
+  background: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.header-inner {
+  margin: 0 auto;
+  padding: 5px 15px;
+  max-width: 1230px;
+
+}
+
+.header-tittle {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 40px;
+  ;
+}
+
+.container {
+  background-color: #F5F5F5;
+  height: 650px;
+  width: 100%;
+  padding: 50px;
+}
+
+/*--メイン--*/
+
+form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  ;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+form p {
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+form input[type="name"],
+form input[type="email"],
+form input[type="password"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 30px auto;
+  border: 1px solid gray;
+  padding: 15px 15px;
+  width: 325px;
+  outline: none;
+  border-radius: 6px;
+  text-align: center;
+}
+
+form input[type="name"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus {
+  width: 325px;
+  background-color: #f0f8ff;
+}
+
+form input[type="submit"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  border: 2px solid #f0f8ff;
+  padding: 15px 15px;
+  width: 325px;
+  outline: none;
+  color: white;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+  background-color: blue;
+}
+
+.login_registration {
+  color: inherit;
+  text-decoration: none;
+  color: blue;
+}
+
+.login_registration:hover {
+  color: chocolate;
+}
+
+
+/*--フッター--*/
+.footer {
+  font-size: 14px;
+  text-align: center;
+  padding-top: 15px;
+}

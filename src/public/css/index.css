@@ -1,0 +1,125 @@
+/*--ヘッダー部分--*/
+
+.header {
+  background: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.header-inner {
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  padding: 5px 15px;
+  max-width: 1230px;
+}
+
+.header-tittle{
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.header-nav{
+  color: #000;
+  margin-left: auto;
+}
+
+.header-nav-list{
+  display: flex;
+}
+
+.header-nav-item:not(:first-child){
+  margin-left: 40px;
+}
+
+.header-nav-item-link{
+  display: block;
+  height: 80px;
+  line-height: 80px;
+  text-decoration: none;
+  color: #000;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: content-box;
+}
+
+/*--メイン--*/
+
+.container{
+  background-color:#F5F5F5;
+  height:  650px;
+  width: 100%;
+  padding: 50px;
+}
+
+.user-title{
+  font-size: 25px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  /* ボタンを均等に配置 */
+  width: 100%;
+  padding-left: 20%;
+}
+
+.button-group form {
+  display: flex;
+  flex-direction: row;
+}
+
+.work-button {
+  width: 350px;
+  height: 200px;
+  padding: 40px 80px;
+  font-size: 36px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin: 20px
+}
+
+
+/* 勤務開始ボタンのスタイル */
+.work-button:not(.work-started) {
+  background-color: #e74c3c;
+  /* 赤色 */
+}
+
+.work-button:active:not(.work-started),
+.work-button:focus:not(.work-started) {
+  background-color: #2980b9;
+  /* ボタンがアクティブ（押された）ときの赤色 */
+}
+
+.work-button.work-started {
+  background-color: #3498db;
+  /* 勤務が開始されている場合の色 */
+}
+/*--フッター--*/
+
+.footer{
+  font-size: 14px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+
+
